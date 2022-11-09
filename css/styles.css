@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------- header - redex.css--------*/
+
+
+/*-------- gender --------*/
+.categories-1{
+    margin: 70px 0;
+}
+.col-4{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-4 a img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-6 a{
+    
+}
+
+
+
+/*-------- rest --------*/
+
+
+
+/*--------- contact us ---------*/
+.flex-form{
+    display: flex;
+    justify-content: center;
+    margin: 13vh 20vh;
+    background-color: #eff0f3;
+
+}
+
+
+#contactForm{
+    margin: 13vh 20vh;
+}
+
+.container-contact{
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    background-color #fff;
+    line-height: 1.9;
+    color: #8c8c8c;
+    text-align: center;
+}
+.contact-1{
+    display: block;
+    position: relative;
+    padding: 10vh;
+    margin: 0 0 30px;
+    background-color: #e8e9f0;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 7px;
+    padding: 0 0 7px 0;
+    border-radius: 0;
+    background: none; 
+    width: 100%;
+}
+
+.form-group{
+     position: relative;
+     width: 100%;
+
+     text-align: center !important;
+}
+#message{
+    border-radius: 10%;
+    padding: 10px;
+}
+
+    .form-group .btn-primary {
+    border: none;
+    border-radius: 0;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    text-transform: uppercase; 
+    margin-top: 30px;
+}
+    .btn-primary{
+        background: #f4f4f4;
+        color: rgb(125, 123, 123);
+        padding: 10px 15px
+    }
+    .btn-primary:hover {
+        background-color: rgb(213, 213, 213); 
+    }
+    
+  
