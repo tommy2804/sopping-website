@@ -86,7 +86,7 @@ nav ul li a:hover{
 }
 a{
     text-decoration: none;
-    color: #8a8fbf;
+    color: #b3c5ce;
 }
 .btn{
     display: inline;
@@ -102,7 +102,7 @@ a{
 
 
 .discount{
-    background-color: #98a3ba;
+    background-color: #b3c5ce;
     padding: 3vh;
     color: #f4f4f4;
 }
@@ -170,7 +170,7 @@ a{
     width: 100%;
 }
 .back-img{
- background: radial-gradient(#f6f6f6,#dcdcdc);;
+ background: radial-gradient(#f6f6f6,#f1eded);;
 }
 .title{
     text-align: center;
@@ -191,8 +191,8 @@ a{
     transform: translateX(-50%);
 }
 .chg-color{
-    background-color: #98a3ba;
-    padding: 20px 0;
+    background-color: #ffe7ea;
+    height: 18vh;
 }
 h4{
     color: #555;
@@ -217,7 +217,7 @@ h4{
     
 }
 .offer .row{
-    background: radial-gradient(#d2a47d,#a7a5a5);
+    background: radial-gradient(#898889,#f1f1f1);
 }
 
 .col-2 .offer-img{
@@ -240,8 +240,9 @@ small{
     padding: 40px 20px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.5s;
+    transition: transform 0.8s;
 }
+
 .testimonial .col-3 img{
     width: 50px;
     margin-top: 20px;
@@ -249,6 +250,7 @@ small{
 }
 .testimonial .col-3:hover{
     transform: translateY(-20px);
+    background-color: rgb(237, 237, 237);
 }
 .fa.fa-quote-left{
     font-size: 34px;
@@ -267,7 +269,7 @@ small{
 /*------- brands --------*/
 .brands{
     margin: 100px auto;
-    background-color: #fff;
+    background-color: rgb(255, 252, 252);
 }
 .col-5{
     width: 150px;
@@ -276,6 +278,7 @@ small{
     width: 100%;
     cursor: pointer;
     filter: grayscale(100%);
+ 
 }
 
 /*-------- footer ---------*/

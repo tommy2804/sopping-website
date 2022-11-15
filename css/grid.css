@@ -21,8 +21,8 @@ body {
 .grid-head{
 display: grid;
 justify-content: space-around;
-grid-template-columns: repeat(300px 250px 250px 200px 200px 200px);
-grid-template-rows:83vh 70vh 40vh ;
+grid-template-columns: 300px 200px 200px 200px 200px 200px;
+grid-template-rows:83vh 95vh 60vh ;
 width: 100%;
 max-height:100%;
 gap: px;
@@ -30,9 +30,10 @@ padding: px;
 }
 .col-grid a img{
     max-width: 100vw;
-    max: height 60vh;;
+    max-height: height 60vh;;
     padding: 0;
     width: 100%;
+    object-fit: cover;
 }
 .ta-1{
    grid-column-start: 1;
@@ -41,28 +42,50 @@ padding: px;
 }
 .ta-1 a img{
     height: 80vh;
+    object-fit: cover;
 }
 .ta-2{
 grid-column-start: 1;
 grid-column-end: 4;
+max-height: 90vh;
     
+}
+.ta-2 img{
+  object-fit: cover;
 }
 .ta-3{
 grid-column-start: 4;
 grid-column-end: 7;
     
 }
+.ta-3 img{
+  min-width: 50vw;
+  min-height: 100vh;
+}
+}
 .ta-4{
 grid-column-start:1;
 grid-column-end: 3;
 }
+.ta-4 .col-grid{
+  
+}
+
 .ta-5{
  grid-column-start: 3;
 grid-column-end: 5;
 }
+.ta-5 img{
+
+}
+
 .ta-6{
 grid-column-start: 5;
 grid-column-end: 7;
+}
+.ta-6 img{
+  min-width: 25vw;
+  min-height: 100vh;
 }
   
 
@@ -77,6 +100,10 @@ grid-column-end: 7;
     backface-visibility:visible;
     text-decoration: none;
     overflow: hidden;
+  }
+  .ta-2 .profile , .ta-3 .profile{
+    max-height: 100%;
+    max-width: 100%;
   }
   .profile::before,
   .profile::after {
