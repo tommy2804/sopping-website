@@ -1,197 +1,186 @@
 body {
-    font-family: "Inter", sans-serif;
-    max-width: 100%;
-    padding: 2rem 1.5rem;
-    margin: 0 auto;
-    color: #241623;
-    background: #eef2f4;
-  }
-  
-  p {
-    max-width: 60ch;
-  }
-  
-  a {
-    color: currentcolor;
-  }
-  .flex-grid{
-    display: flex;
-    justify-content: center;
+  font-family: "Inter", sans-serif;
+  max-width: 100%;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  color: #241623;
+  background: #eef2f4;
 }
-.grid-head{
-display: grid;
-justify-content: space-around;
-grid-template-columns: 300px 200px 200px 200px 200px 200px;
-grid-template-rows:83vh 95vh 60vh ;
-width: 100%;
-max-height:100%;
-gap: px;
-padding: px;
+
+p {
+  max-width: 60ch;
 }
-.col-grid a img{
-    max-width: 100vw;
-    max-height: height 60vh;;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
+
+a {
+  color: currentcolor;
 }
-.ta-1{
-   grid-column-start: 1;
-   grid-column-end: 7;
-   
+.flex-grid {
+  display: flex;
+  justify-content: center;
 }
-.ta-1 a img{
-    height: 80vh;
-    object-fit: cover;
+.grid-head {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 300px 200px 200px 200px 200px 200px;
+  grid-template-rows: 83vh 95vh 60vh;
+  width: 100%;
+  max-height: 100%;
+  gap: px;
+  padding: px;
 }
-.ta-2{
-grid-column-start: 1;
-grid-column-end: 4;
-max-height: 90vh;
-    
-}
-.ta-2 img{
+.col-grid a img {
+  max-width: 100vw;
+  max-height: height 60vh;
+  padding: 0;
+  width: 100%;
   object-fit: cover;
 }
-.ta-3{
-grid-column-start: 4;
-grid-column-end: 7;
-    
+.ta-1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
 }
-.ta-3 img{
+.ta-1 a img {
+  height: 80vh;
+  object-fit: cover;
+}
+.ta-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  max-height: 90vh;
+}
+.ta-2 img {
+  object-fit: cover;
+}
+.ta-3 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.ta-3 img {
   min-width: 50vw;
   min-height: 100vh;
 }
-}
-.ta-4{
-grid-column-start:1;
-grid-column-end: 3;
-}
-.ta-4 .col-grid{
-  
+
+.ta-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.ta-5{
- grid-column-start: 3;
-grid-column-end: 5;
+.ta-5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
-.ta-5 img{
+.ta-5 img {
+}
 
+.ta-6 {
+  grid-column-start: 5;
+  grid-column-end: 7;
 }
-
-.ta-6{
-grid-column-start: 5;
-grid-column-end: 7;
-}
-.ta-6 img{
+.ta-6 img {
   min-width: 25vw;
   min-height: 100vh;
 }
-  
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 1.5rem;
+  color: #7e7a7a;
+  backface-visibility: visible;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ta-2 .profile,
+.ta-3 .profile {
+  max-height: 100%;
+  max-width: 100%;
+}
+.profile::before,
+.profile::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* inset: 0; */
+  top: 0;
+  left: 0;
+}
+.profile::before {
+  transition: 300ms opacity linear;
+}
+.profile::after {
+  opacity: 0;
+  transition: 300ms opacity linear;
+  width: 100vw;
+}
+.profile > * {
+  z-index: 1;
+}
+.profile img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: -1;
+  object-fit: cover;
+  /* filter; grayscale(1); */
+  transition: filter 200ms ease, transform 250ms linear;
+}
 
-  .profile {
-    display: flex;
-    flex-direction: column;
-    aspect-ratio: 1/1;
-    position: relative;
-    padding: 1.5rem;
-    color: #7e7a7a;
-    backface-visibility:visible;
-    text-decoration: none;
-    overflow: hidden;
-  }
-  .ta-2 .profile , .ta-3 .profile{
-    max-height: 100%;
-    max-width: 100%;
-  }
-  .profile::before,
-  .profile::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    /* inset: 0; */
-    top: 0;
-    left: 0;
-  }
-  .profile::before {
-    
-    transition: 300ms opacity linear;
-  }
-  .profile::after {
-    opacity: 0;
-    transition: 300ms opacity linear;
-    width: 100vw;
-    ;
-  }
-  .profile > * {
-    z-index: 1;
-  }
-  .profile img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: -1;
-    object-fit: cover;
-    /* filter; grayscale(1); */
-    transition: filter 200ms ease, transform 250ms linear;
-  }
-  
-  .profile h2,
-  .profile p {
-    transform: translateY(2ex);
-  }
-  
-  .profile h2 {
-    font-size: 1.7rem;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 0.03ch;
-    transition: 300ms transform ease;
-  }
-  
-  .profile p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 0;
-  }
-  
-  .profile p {
-    transition: 300ms opacity linear, 300ms transform ease-in-out;
-  }
-  .profile p i{
-    font-size: 12px;
-  }
-  
-  .profile:focus {
-    outline: 1.5rem solid white;
-    outline-offset: -0.5rem;
-  }
-  
-  .profile:hover :is(h2, p),
-  .profile:focus :is(h2, p) {
-    transform: none;
-  }
-  
-  .profile:hover::after,
-  .profile:focus::after,
-  .profile:hover::before,
-  .profile:focus::before {
-    opacity: 0.7;
-  }
-  
-  .profile:hover p,
-  .profile:focus p {
-    opacity: 1;
-    transition-delay: 200ms;
-  }
-  
-  .profile:hover img,
-  .profile:focus img {
-    filter: grayscale(0);
-    transform: scale(1.1) rotate(1deg);
-  }
-  
+.profile h2,
+.profile p {
+  transform: translateY(2ex);
+}
+
+.profile h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.03ch;
+  transition: 300ms transform ease;
+}
+
+.profile p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.profile p {
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+.profile p i {
+  font-size: 12px;
+}
+
+.profile:focus {
+  outline: 1.5rem solid white;
+  outline-offset: -0.5rem;
+}
+
+.profile:hover :is(h2, p),
+.profile:focus :is(h2, p) {
+  transform: none;
+}
+
+.profile:hover::after,
+.profile:focus::after,
+.profile:hover::before,
+.profile:focus::before {
+  opacity: 0.7;
+}
+
+.profile:hover p,
+.profile:focus p {
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+.profile:hover img,
+.profile:focus img {
+  filter: grayscale(0);
+  transform: scale(1.1) rotate(1deg);
+}

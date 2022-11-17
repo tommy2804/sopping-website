@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify.IL</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon_io.run/favicon.ico">
-</head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon_io.run/favicon.ico"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
     }
-    .header-welcome{
-        height: 80vh;
+    .header-welcome {
+      height: 80vh;
     }
-    .video-background{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
+    .video-background {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+    .logo {
+      margin: 25px;
+      height: 400px;
+    }
+    @media (min-aspect-ratio: 16/9) {
+      .video-background {
+        width: 100%;
         height: auto;
-        z-index: -1;
+      }
     }
-    .logo{
-        margin: 25px;
-        height: 400px;
-    }
-    @media (min-aspect-ratio:16/9){
-        .video-background{
-            width: 100%;
-            height: auto;
-        }
-    }
-    @media (max-aspect-ratio:16/9){
-        .video-background{
-            width: auto;
-            height: 100%;
-        }
+    @media (max-aspect-ratio: 16/9) {
+      .video-background {
+        width: auto;
+        height: 100%;
+      }
     }
 
-    .welcome-msg{
-        position:relative ;
-        text-align: center;
-        font-family: monospace;
-        color: rgb(0, 0, 0);
+    .welcome-msg {
+      position: relative;
+      text-align: center;
+      font-family: monospace;
+      color: rgb(0, 0, 0);
     }
-    .welcome-msg h1{
-        font-size: 80px;
-        font-weight: 100;
-        letter-spacing: 3px;
+    .welcome-msg h1 {
+      font-size: 80px;
+      font-weight: 100;
+      letter-spacing: 3px;
     }
-    
-
-</style>
-<body>
-
-<section class="header-welcome">
-    <a href="./Home.html" style="text-decoration:none;">
-        <video autoplay loop  class="video-background" muted plays-inline >
-            <source src="./images/Men/video-shopify.mp4" type="video/mp4">
+  </style>
+  <body>
+    <section class="header-welcome">
+      <a href="./Home.html" style="text-decoration: none">
+        <video autoplay loop class="video-background" muted plays-inline>
+          <source src="./images/Men/video-shopify.mp4" type="video/mp4" />
         </video>
 
-        <img src="./images/shipify.il-no-back.png" class="logo" alt="">
+        <img src="./images/shipify.il-no-back.png" class="logo" alt="" />
         <div class="welcome-msg">
-            <h1>CLICK ME FOR MORE</h1>
+          <h1>CLICK ME FOR MORE</h1>
         </div>
-    </a>
-</section>
-    
-</body>
+      </a>
+    </section>
+  </body>
 </html>

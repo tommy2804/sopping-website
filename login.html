@@ -1,105 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify.IL</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon_io.run/favicon.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicon_io.run/favicon.ico"
+    />
     <style media="screen">
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            text-align: center;
-        }
-        #just-form{
-            display: inline-block;
-            padding-left: 40vh;
-            padding-right: 40vh;
-            border: 3px solid #f1f1f1;
-            
-        }
-        .form-action{
-            display: inline-block;
-            line-height: 2;
-        }
-        .design-form{
-            display: flex;
-            text-align: center;
-        }
-        #password{
-            position: relative;
-            float: right;
-        }
-        .header{
-            padding-bottom: 30vh;
-        }
-        .btn{
-            background-color: rgb(0, 0, 0);
-            padding: 5px 10px;
-            color: #fff;
-            border: none;
-            border-radius: 0;
-            font-size: 12px;
-            text-transform: uppercase; 
-            margin-top: 30px;
-        }
-        .btn:hover{
-            background-color: rgb(96, 96, 96);
-        }
-        input[type=text], input[type=password] {
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 10%;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+      }
+      #just-form {
+        display: inline-block;
+        padding-left: 40vh;
+        padding-right: 40vh;
+        border: 3px solid #f1f1f1;
+      }
+      .form-action {
+        display: inline-block;
+        line-height: 2;
+      }
+      .design-form {
+        display: flex;
+        text-align: center;
+      }
+      #password {
+        position: relative;
+        float: right;
+      }
+      .header {
+        padding-bottom: 30vh;
+      }
+      .btn {
+        background-color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-top: 30px;
+      }
+      .btn:hover {
+        background-color: rgb(96, 96, 96);
+      }
+      input[type="text"],
+      input[type="password"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
 
-
-
-        </style>
-</head>
-
-<body>
-    <div class="header">
-
-    </div>
-
+  <body>
+    <div class="header"></div>
 
     <form action="" method="post" id="just-form">
-        <div class="form-action">
-            <div class="design-form">
-                <div class="move-form">
-                    <div class="login-info col-2">
-                        <div class="col-1" id="userName">
-                            <label for=""><b>Username</b></label>
-                            <input type="text" name="userName" autocomplete="off" required="true" placeholder="Enter Username">
-                        </div>
-                        <div class="col-1" id="password">
-                            <label for=""><b>password</b></label>
-                            <input type="password" name="password" autocomplete="off" required="true" placeholder="Enter Password">
-                        </div>
-                    </div>
-                    <div class="col-1">            
-                        <input type="checkbox" name="remember" id="rememberMe">
-                        <label for="">Remember Me</label>
-                    </div>
-                    <div class="col-2">
-                        <input type="submit" value="Login" class="btn" id="buton">
-                        <input type="reset" value="Clear" class="btn" id="clear">
-                    </div>
-                </div>
+      <div class="form-action">
+        <div class="design-form">
+          <div class="move-form">
+            <div class="login-info col-2">
+              <div class="col-1" id="userName">
+                <label for=""><b>Username</b></label>
+                <input
+                  type="text"
+                  name="userName"
+                  autocomplete="off"
+                  required="true"
+                  placeholder="Enter Username"
+                />
+              </div>
+              <div class="col-1" id="password">
+                <label for=""><b>password</b></label>
+                <input
+                  type="password"
+                  name="password"
+                  autocomplete="off"
+                  required="true"
+                  placeholder="Enter Password"
+                />
+              </div>
             </div>
+            <div class="col-1">
+              <input type="checkbox" name="remember" id="rememberMe" />
+              <label for="">Remember Me</label>
+            </div>
+            <div class="col-2">
+              <input type="submit" value="Login" class="btn" id="buton" />
+              <input type="reset" value="Clear" class="btn" id="clear" />
+            </div>
+          </div>
         </div>
-
+      </div>
     </form>
-
-
-
-</body>
+  </body>
 </html>
-    
